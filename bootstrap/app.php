@@ -15,6 +15,13 @@ $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
 
+if (getenv('APP_ENV') === 'production') {
+    $app->bind('path.public', function() {
+        return base_path() . '/public_html';
+    });
+}
+
+
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
