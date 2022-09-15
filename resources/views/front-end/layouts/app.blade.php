@@ -61,7 +61,12 @@
                 @endif
             </li>
             <li>
-                <a href="{{ route('contacto') }}">Contacto</a>
+             @if (request()->routeIs('contacto'))
+                 <a class="menu-item_actived-danger" href="{{ route('contacto') }}">Contacto</a>
+             @else
+                 <a href="{{ route('contacto') }}">Contacto</a>
+             @endif
+
             </li>
         </ul>
         <div class="direccion_menu">

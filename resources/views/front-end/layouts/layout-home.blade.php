@@ -43,10 +43,10 @@
                 <a href="{{ route('doctecnica') }}">Documentación técnica</a>
             </li>
             <li>
-                <a href="./empresa.html">Empresa</a>
+                <a href="{{ route('empresa') }}">Empresa</a>
             </li>
             <li>
-                <a href="./contacto.html">Contacto</a>
+                <a href="{{ route('contacto') }}">Contacto</a>
             </li>
         </ul>
         <div class="direccion_menu">
@@ -77,10 +77,10 @@
                         <a href="{{ route('doctecnica') }}">Documentación técnica</a>
                     </li>
                     <li>
-                        <a href="">Empresa</a>
+                        <a href="{{ route('empresa') }}">Empresa</a>
                     </li>
                     <li>
-                        <a href="">Contacto</a>
+                        <a href="{{ route('contacto') }}">Contacto</a>
                     </li>
                 </ul>
                 <div class="direccion_menu-mobile">
